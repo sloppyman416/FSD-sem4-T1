@@ -1,0 +1,9 @@
+{                       "name":"rahul",
+                        "age":22,
+                        "city":"Ahmedabad",
+                        "skills":["html","css","javascript"],
+                        "address":{"state":"gujrat",
+                                    "country":"India"
+                        }
+}
+           

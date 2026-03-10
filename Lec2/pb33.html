@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on click</title>
+</head>
+<body>
+    <button onclick="click1()">Click me</button>
+    <script>
+        function click1(){
+            const st = `{"Name":"xyz","age":17,"dob":"1999-09-27"}`
+            const obj = JSON.parse(st)
+            c=new Date(obj.dob)
+            document.write(c)
+        }
+    </script>
+</body>
+</html>

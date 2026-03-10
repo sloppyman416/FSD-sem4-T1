@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let obj={
+    "name":"lj",
+    "branch":"CE",
+    "address":"sarkhej"
+}
+
+// two ways to access key:value pair
+console.log(obj["branch"]) //1
+console.log(obj.branch)    //2
+
+
+// to change the value in run time
+obj.branch="IT"     //1
+obj["branch"]="IT"  //2
+console.log(obj.branch)
+
+
+var cars=[
+    {
+        "color":"gray",
+        "model":1,
+        "nofdoors":4
+    },
+    {
+        "color":"yellow",
+        "model":2,
+        "nofdoors":4
+    }
+]
+
+var jsoncar=JSON.stringify(cars)
+console.log(jsoncar)            //is in String
+console.log(jsoncar[0].model)   //undefined 
+console.log(cars[0].model)      //model--->1
+
+
+    </script>
+</body>
+</html>
