@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const sub = {
+    "fsd": [
+        {
+            "topic": "html",
+            "course": "beginner",
+            "content": ["tags", "table", "form"]
+        },
+        {
+            "topic": "css",
+            "course": "beginner",
+            "content": ["flex", "grid", "animation"]
+        }
+    ]
+}
+
+var temp='<table style="border:2px solid red;">'
+temp+='<tr>'
+
+for(x in sub["fsd"][0]){
+    temp+="<th>"+x+"</th>"
+}
+temp+="</tr>"
+
+for(x in sub.fsd){
+    temp+="<tr>"
+    for(y in sub.fsd[x]){
+        temp+="<td>"+sub.fsd[x][y]+"</td>"
+    }
+    temp+="</tr>"
+}
+
+temp+="</table>"
+document.write(temp)
+    </script>
+</body>
+</html>

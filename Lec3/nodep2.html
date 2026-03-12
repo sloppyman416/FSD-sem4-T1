@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size increasing font</title>
+    <p id="ptag" style="font-size: 20px;">Hello</p>
+    <script>
+        let p=document.getElementById("ptag")
+        let size=20
+        x = function () {
+            size+=5
+           if(size>=50){
+                clearInterval(a)
+           }
+           
+            p.style.fontSize=size+"px"
+        }
+
+        const a=setInterval(x, 100)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
