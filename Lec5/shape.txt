@@ -1,0 +1,1 @@
+[{"name":"circle","diameter":8},{"name":"square","side":4}]Circle=25.12Square=16

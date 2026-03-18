@@ -1,0 +1,3 @@
+50 -1 7 99 78
+Sorted array :-1,7,50,78,99
+Maximum no. :99

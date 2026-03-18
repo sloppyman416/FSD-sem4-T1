@@ -1,0 +1,5 @@
+var fs=require("fs")
+fs.writeFileSync("s1.txt", JSON.stringify({d:{a:10,b:20,c:[30,10]}}))
+var data=fs.readFileSync("s1.txt","utf-8")
+var datap=JSON.parse(data)
+console.log(datap.d.a+datap.d.b)
