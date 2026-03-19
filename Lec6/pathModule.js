@@ -1,0 +1,11 @@
+var pm = require("path")
+
+var file = pm.basename("C:\Users\LJENG\Desktop\Harshrajsinh\Lec6\pathModule.js")
+var dir = pm.dirname("C:\Users\LJENG\Desktop\Harshrajsinh\Lec6\pathModule.js")
+var ext = pm.extname("C:\Users\LJENG\Desktop\Harshrajsinh\Lec6\pathModule.js")
+var p = pm.parse("C:\Users\LJENG\Desktop\Harshrajsinh\Lec6\pathModule.js")
+console.log(file)
+console.log(dir)
+console.log(ext)
+console.log(p)
+console.log(p.base)
